@@ -1,0 +1,181 @@
+.host-section {
+    background-color: #282828;
+}
+.host-content {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px 40px;
+}
+.host-section .section-heading {
+    color: white;
+    padding: 50px 0 10px;
+}
+.host-content> div {
+    width: 350px;
+    background-color: white;
+    padding: 15px 15px 30px;
+    border-radius: 10px;
+    border-top: 16px solid black;
+    position: relative;
+}
+.host-content > div.orange-border {
+    border-color: var(--main-color);
+}
+.host-content > div.purple-border {
+    border-color: var(--purple);
+}
+.host-content > div.green-border {
+    border-color: var(--green);
+}
+.host-content > div.blue-border {
+    border-color: var(--blue);
+}
+.host-title {
+    font-size: 17px;
+}
+.host-desc {
+    font-size: 13px;
+    margin: 10px 0;
+    color: #4a4a4a;
+    font-weight: 600;
+    height: 35px;
+} 
+.host-price {
+    font-weight: 800;
+    font-size: 22px;
+}
+.host-list li {
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 7px;
+}
+.host-list li:first-child {
+    margin-top: 10px;
+}
+.host-list li:last-child {
+    margin-bottom: 20px;
+}
+.host-content > div button {
+    width: 99%;
+    background-color: transparent;
+    padding: 4px 5px;
+    border-radius: 10px;
+    font-weight: 800;
+    font-size: 15px;
+    border: none;
+    outline: 2px solid;
+    cursor: pointer;
+    transition: all .5s;
+}
+.host-content > div.orange-border button {
+    outline-color: var(--main-color);
+    color: var(--main-color);
+}
+.host-content > div.orange-border button:hover {
+    background-color: var(--main-color);
+    color: white;
+
+}
+.host-content > div.purple-border button {
+    outline-color: var(--purple);
+    color: var(--purple);
+}
+.host-content > div.purple-border button:hover {
+    background-color: var(--purple);
+    color: white;
+}
+.host-content > div.green-border button {
+    outline-color: var(--green);
+    color: var(--green);
+}
+.host-content > div.green-border button:hover {
+    background-color: var(--green);
+    color: white;
+}
+.host-content > div.blue-border button {
+    outline-color: var(--blue);
+    color: var(--blue);
+}
+.host-content > div.blue-border button:hover {
+    background-color: var(--blue);
+    color: white;
+}
+.host-details {
+    text-align: center;
+    color: white;
+    padding: 0 5px;
+}
+.host-details a {
+    color: white;
+}
+.host-details > p {
+    padding-bottom: 5px;
+}
+.host-details a:hover {
+    color: #f3d08f;
+    text-decoration: underline;
+}
+.side-note {
+    position: absolute;
+    right: 25px;
+    top: 90px;
+    font-size: 14px;
+    width: 140px;
+    text-align: left;
+    font-weight: 500;
+    color: #55585a;
+}
+
+@media (min-width: 798px) and (max-width: 1285.60px) {
+    .host-content {
+        justify-content: center;
+    }
+    .host-content > div {
+        width: 500px;
+        margin: 10px;
+    }
+}
+@media (min-width: 577px) and (max-width: 797px) {
+    .host-content {
+        justify-content: center;
+    }
+    .host-content > div {
+        width: 400px;
+    }
+    .host-content > div:not(:last-child) {
+        margin-bottom: 15px;
+    }
+}
+@media (min-width: 200px) and (max-width: 576px) {
+    .host-content {
+        justify-content: center;
+    }
+    .host-content > div {
+        width: 38rem;
+    }
+    .host-content > div:not(:last-child) {
+        margin-bottom: 15px;
+    }
+    .host-title {
+        font-size: 1rem;
+    }
+    .host-desc {
+        font-size: 0.87rem;
+    } 
+    .host-price {
+        font-size: 1.3rem;
+    }
+    .host-list li {
+        font-size: 12px;
+    }
+    .host-content > div button {
+        font-size: 14px;
+    }
+    .side-note {
+        right: 10px;
+        font-size: 12px;
+    }
+    .host-details {
+        font-size: 14px;
+    }
+}

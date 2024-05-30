@@ -1,0 +1,112 @@
+nav {
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: white;
+    box-shadow: 4px -5px 16px 0px #c8c7c7;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+.logo {
+    align-items: center;
+}
+.logo div {
+    width: 80px;
+    margin-right: 20px;
+}
+.logo div img {
+    width: 100%;
+}
+.logo h1 {
+    font-size: 16px;
+    font-weight: 500;
+}
+#nav-items {
+    display: flex;
+}
+#nav-items li a {
+    color: #5e5e5e;
+    position: relative;
+    transition: all .5s;
+}
+#nav-items li:not(:last-child) {
+    margin-right: 20px;
+}
+#nav-items li a:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: var(--main-color);
+    transition: all 0.5s;
+}
+#nav-items li:hover a, .active {
+    color: black !important;
+    font-weight: 600;
+    cursor: pointer;
+}
+#nav-items li:hover a::after, .active::after {
+    width: 30px !important;
+}
+.for-responsive {
+    display: none;
+}
+.for-responsive i {
+    color: black;
+}
+#nav-items.nav-active {
+    right: 0;
+}
+@media screen and (max-width: 1088px){
+    #nav-items {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        position: fixed;
+        top: 61px;
+        right: -300px;
+        width: 200px;
+        min-height: 50vh;
+        background-color: #f4f4f4;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        transition: .5s ease-in;
+    }
+    #nav-items li {
+        padding: 15px 10px;
+    }
+    .for-responsive {
+        display: block;
+    }
+    .for-responsive i {
+        font-size: 22px;
+        cursor: pointer;
+    }
+}
+@media screen and (max-width: 480px) {
+    nav {
+        align-items: center;
+        padding: 20px;
+    }
+    .logo div {
+        width: 70px;
+        margin-right: 10px;
+    }
+    .logo div img{
+        width: 100%;
+    }
+    .logo h1 {
+        font-size: 13px;
+    }
+    #nav-items {
+        min-height: max-content;
+    }
+    #nav-items li a {
+       font-size: 14px;
+    }
+    .for-responsive i {
+        font-size: 20px;
+    }
+}

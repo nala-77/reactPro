@@ -1,0 +1,197 @@
+.hero {
+  min-height: 100vh;
+  position: relative;
+}
+.hero-text {
+  padding: 10rem 40px 0;
+  width: 650px;
+}
+.hero-text h2 {
+  color: var(--main-color);
+  z-index: 2;
+}
+.hero-text div {
+  flex-direction: column;
+  margin-top: 20px;
+}
+.hero-text div > p {
+  text-wrap: balance;
+  margin-bottom: 8px;
+}
+.hero-text p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.6;
+  z-index: 2;
+}
+.hero-bottom {
+    position: absolute;
+    bottom: 0;
+  background-image: url("./../../../public/Images/hero-footer.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 70px;
+  height: 130px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: end;
+  padding: 10px 40px 20px;
+}
+.hero-bottom .hero-icons a {
+  background-color: white;
+  display: inline-block;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 20px;
+  transition: all 0.5s;
+}
+.hero-bottom .hero-icons a:hover {
+  background-color: var(--main-color);
+}
+.hero-bottom .hero-icons a:hover i {
+  color: white;
+}
+.hero-bottom .hero-icons a i {
+  color: var(--main-color);
+  font-weight: 600;
+}
+.hero-icons a:not(:last-child) {
+  margin-right: 5px;
+}
+.hero-bottom p {
+  color: white;
+}
+.right-img {
+  right: 0;
+  top: 0;
+}
+.right-img,
+.mario-img,
+.press-start,
+.start {
+  position: absolute;
+}
+.mario-img {
+  right: 10px;
+  bottom: 3%;
+}
+.press-start {
+  right: 40%;
+  bottom: 24%;
+}
+.start {
+  left: -13%;
+  top: 30%;
+  font-size: 25px;
+  color: var(--main-color);
+  font-weight: 600;
+}
+.start:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 769px) and (max-width: 987px) {
+  .hero-text {
+    width: 600px;
+  }
+  .mario-img {
+    right: 0%;
+    width: 250px;
+    text-align: end;
+  }
+  .mario-img img {
+    width: 80%;
+  }
+  .press-start {
+    width: 250px;
+    right: 33%;
+  }
+  .start {
+    left: 0;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .hero-text {
+    width: 400px;
+  }
+  .hero-text h2 {
+    font-size: 19px;
+  }
+  .hero-text p {
+    font-size: 15px;
+  }
+  .mario-img {
+    right: 0%;
+    width: 237px;
+    text-align: end;
+  }
+  .mario-img img {
+    width: 87%;
+  }
+  .press-start {
+    width: 250px;
+    right: 36%;
+  }
+  .start {
+    left: 0;
+  }
+  .hero-bottom p {
+    font-size: 12px;
+  }
+}
+@media (min-width: 200px) and (max-width: 576px) {
+  .hero-text {
+    padding: 7rem 30px 0;
+    width: 95%;
+    text-align: center;
+  }
+
+  .hero-text h2 {
+    font-size: 16px;
+  }
+  .hero-text p {
+    font-size: 15px;
+  }
+  .mario-img {
+    right: 0%;
+    text-align: end;
+    bottom: 5%;
+  }
+  .mario-img img {
+    width: 50%;
+  }
+  .right-img {
+    display: none;
+  }
+  .press-start {
+    right: 21%;
+    bottom: 25%;
+  }
+
+  .start {
+    left: 40%;
+    font-size: 16px;
+  }
+  .hero-bottom {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .hero-bottom p {
+    font-size: 10px;
+    width: 50%;
+  }
+  .hero-bottom {
+    padding: 10px 5px 20px;
+  }
+  .hero-bottom .hero-icons a {
+    padding: 4px;
+    width: 28px;
+    height: 28px;
+  }
+  .hero-bottom .hero-icons a i {
+    font-size: 12px;
+  }
+}
